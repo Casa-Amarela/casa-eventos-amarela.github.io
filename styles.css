@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #ffcc0000 0%, #ffcc0025 50%, #ffcc0042 100%);
+    background: #F8F6F2;
     min-height: 100vh;
     overflow-x: hidden;
 }
@@ -74,14 +74,27 @@ body {
     display: flex;
     align-items: center;
     padding: 25px;
-    background: rgba(255, 255, 255, 0.9);
+    background: white;
     border-radius: 20px;
     text-decoration: none;
     color: inherit;
     transition: all 0.3s ease;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
     position: relative;
     overflow: hidden;
+    border-left: 4px solid #C76B92;
+}
+
+.whatsapp {
+    background: linear-gradient(135deg, #ffffff 0%, #fffbf0 100%);
+}
+
+.maps {
+    background: linear-gradient(135deg, #ffffff 0%, #fffbf0 100%);
+}
+
+.instagram {
+    background: linear-gradient(135deg, #ffffff 0%, #fffbf0 100%);
 }
 
 .link-card::before {
@@ -100,8 +113,9 @@ body {
 }
 
 .link-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(199, 107, 146, 0.15);
+    border-left-color: #F0B350;
 }
 
 .link-icon {
@@ -135,19 +149,19 @@ body {
 }
 
 .link-arrow {
-    color: #bdc3c7;
+    color: #C76B92;
     font-size: 1.2rem;
     transition: all 0.3s ease;
 }
 
 .link-card:hover .link-arrow {
-    color: #2c3e50;
+    color: #F0B350;
     transform: translateX(5px);
 }
 
 /* Link Card Colors */
 .instagram .link-icon {
-    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    background: linear-gradient(45deg, #C76B92, #F0B350);
 }
 
 .whatsapp .link-icon {
@@ -155,11 +169,11 @@ body {
 }
 
 .cart .link-icon {
-    background: #f39c12;
+    background: #F0B350;
 }
 
 .maps .link-icon {
-    background: #e74c3c;
+    background: #C76B92;
 }
 
 /* Footer Styles */
@@ -249,4 +263,46 @@ body {
 /* Remove old bee drawing styles */
 .bee, .bee-body, .bee-stripe, .bee-wings, .wing, .bee-antennae, .antenna {
     display: none !important;
+} 
+
+.title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    line-height: 1.1;
+}
+
+.title .casa {
+    color: #C76B92;
+}
+
+.title .amarela {
+    color: #F0B350;
+} 
+
+.subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    font-weight: 500;
+    margin-bottom: 20px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+}
+
+.subtitle::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 400%;
+    background: radial-gradient(ellipse, rgba(243, 175, 67, 0.446) 0%, rgba(240, 179, 80, 0.08) 40%, rgba(248, 246, 242, 0.02) 70%, transparent 100%);
+    z-index: -1;
+    border-radius: 50%;
 } 
