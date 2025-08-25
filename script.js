@@ -4,13 +4,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // Configuration object for your links
     const linksConfig = {
         instagram: {
-            url: 'https://www.instagram.com/vaievemaluguel'
+            url: 'https://www.instagram.com/casaamarelaa'
         },
         whatsapp: {
             url: 'https://api.whatsapp.com/send?1=pt_BR&phone=5596981260219'
-        },
-        cart: {
-            url: 'https://vaievemaluguel.estoquenow.site/'
         },
         maps: {
             url: 'https://maps.app.goo.gl/cEhfeAdRETH73ErL9?g_st=ic'
